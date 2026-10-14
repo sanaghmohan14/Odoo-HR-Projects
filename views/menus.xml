@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_hr_project_root" name="HR Project"
+              groups="group_hr_project_hr"/>
+
+    <menuitem id="menu_hr_project_projects" name="Projects"
+              parent="menu_hr_project_root" action="hr_project_action"
+              sequence="10" groups="group_hr_project_manager"/>
+
+    <menuitem id="menu_hr_project_tasks" name="Tasks"
+              parent="menu_hr_project_root" sequence="20"/>
+
+    <menuitem id="menu_hr_project_my_tasks" name="My Tasks"
+              parent="menu_hr_project_tasks" action="hr_project_task_my_action"
+              sequence="10" groups="group_hr_project_hr"/>
+
+    <menuitem id="menu_hr_project_all_tasks" name="All Tasks"
+              parent="menu_hr_project_tasks" action="hr_project_task_action"
+              sequence="20" groups="group_hr_project_manager"/>
+
+    <menuitem id="menu_hr_project_config" name="Configuration"
+              parent="menu_hr_project_root" sequence="90"
+              groups="group_hr_project_manager"/>
+
+    <menuitem id="menu_hr_project_stages" name="Project Stages"
+              parent="menu_hr_project_config" action="hr_project_stage_action"
+              sequence="10"/>
+
+    <menuitem id="menu_hr_project_task_stages" name="Task Stages"
+              parent="menu_hr_project_config" action="hr_project_task_stage_action"
+              sequence="20"/>
+</odoo>

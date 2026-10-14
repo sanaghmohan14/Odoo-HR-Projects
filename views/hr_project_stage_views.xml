@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_project_stage_view_list" model="ir.ui.view">
+        <field name="name">hr.project.stage.list</field>
+        <field name="model">hr.project.stage</field>
+        <field name="arch" type="xml">
+            <list string="Project Stages" editable="bottom" default_order="sequence, id">
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="fold"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="hr_project_stage_action" model="ir.actions.act_window">
+        <field name="name">Project Stages</field>
+        <field name="res_model">hr.project.stage</field>
+        <field name="view_mode">list</field>
+    </record>
+</odoo>

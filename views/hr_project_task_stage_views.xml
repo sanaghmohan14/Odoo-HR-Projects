@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_project_task_stage_view_list" model="ir.ui.view">
+        <field name="name">hr.project.task.stage.list</field>
+        <field name="model">hr.project.task.stage</field>
+        <field name="arch" type="xml">
+            <list string="Task Stages" editable="bottom" default_order="sequence, id">
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="color" widget="color_picker"/>
+                <field name="fold"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="hr_project_task_stage_action" model="ir.actions.act_window">
+        <field name="name">Task Stages</field>
+        <field name="res_model">hr.project.task.stage</field>
+        <field name="view_mode">list</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create the first task stage</p>
+            <p>Task stages are added manually, for example To Do, In Progress and Done.</p>
+        </field>
+    </record>
+</odoo>

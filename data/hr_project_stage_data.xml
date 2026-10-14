@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="hr_project_stage_new" model="hr.project.stage">
+            <field name="name">New</field>
+            <field name="sequence">1</field>
+        </record>
+        <record id="hr_project_stage_ongoing" model="hr.project.stage">
+            <field name="name">Ongoing</field>
+            <field name="sequence">2</field>
+        </record>
+        <record id="hr_project_stage_completed" model="hr.project.stage">
+            <field name="name">Completed</field>
+            <field name="sequence">3</field>
+        </record>
+        <record id="hr_project_stage_cancelled" model="hr.project.stage">
+            <field name="name">Cancelled</field>
+            <field name="sequence">4</field>
+            <field name="fold" eval="True"/>
+        </record>
+    </data>
+</odoo>

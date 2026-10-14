@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hr_project_manager,hr.project manager,model_hr_project,group_hr_project_manager,1,1,1,1
+access_hr_project_stage_manager,hr.project.stage manager,model_hr_project_stage,group_hr_project_manager,1,1,1,1
+access_hr_project_task_manager,hr.project.task manager,model_hr_project_task,group_hr_project_manager,1,1,1,1
+access_hr_project_task_hr,hr.project.task hr,model_hr_project_task,group_hr_project_hr,1,1,0,0
+access_hr_project_task_stage_manager,hr.project.task.stage manager,model_hr_project_task_stage,group_hr_project_manager,1,1,1,1
+access_hr_project_task_stage_hr,hr.project.task.stage hr,model_hr_project_task_stage,group_hr_project_hr,1,0,0,0
